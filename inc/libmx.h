@@ -75,6 +75,7 @@ int mx_memcmp(const void *s1, const void *s2, size_t n);
 void *mx_memchr(const void *s, int c, size_t n);
 void *mx_memmem(const void *big, size_t big_len, const void *little, size_t little_len);
 void *mx_memmove(void *dst, const void *src, size_t len);
+void *mx_memrchr(const void *s, int c, size_t n);
 
 //List pack
 typedef struct s_list {

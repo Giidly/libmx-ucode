@@ -5,6 +5,8 @@ char *mx_strtrim(const char *str) {
     while(mx_isspace(*str))
         str++;
     int len = mx_strlen(str);
+    if(len <= 0)
+        return NULL;
     while(mx_isspace(str[len-1]))
         len--;
     new = mx_strndup(str,len);

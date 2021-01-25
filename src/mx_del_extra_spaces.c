@@ -9,7 +9,7 @@ char *mx_del_extra_spaces(const char *str) {
     else {
         mem = mx_strnew(mx_strlen(str));
         for(int i = 0; str[i]; i++) {
-            if(mx_isspace(str[i])) {
+            if(!(mx_isspace(str[i]))) {
                 mem[j] = str[i];
                 j++;
             }
